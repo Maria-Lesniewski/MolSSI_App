@@ -8,6 +8,7 @@ and thus to avoid an unintentional pre-release of this project I have ablated al
 written exclusively by me from heirloom files I've altered or worked to understand
 
 It contains: 
+     
      -some simple python scripts I've put together for prior research projects [Research_Scripts]
      
      -The python scripts required to recreate the figure included in the written proposal of the application [Figure_1]
