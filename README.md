@@ -9,6 +9,9 @@ written exclusively by me from heirloom files I've altered or worked to understa
 
 It contains: 
      -some simple python scripts I've put together for prior research projects [Research_Scripts]
+     
      -The python scripts required to recreate the figure included in the written proposal of the application [Figure_1]
+     
      -Additional BOCS functions I've written given the above disclaimer [MBOCS_Functions]
+     
      -The beginings of a bash-based automated test suite I am in the midst of designing for BOCS [BOCS_AUTO_TEST] 
