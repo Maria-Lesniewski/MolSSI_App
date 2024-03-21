@@ -1,0 +1,40 @@
+[Mode] GROMACS
+
+[Temperature]  298
+
+[Structures]    1
+inp.txt
+[End Structures]
+
+[Site_Types]    1
+LJ
+[End Site_Types]
+
+[Inter_Types]  1
+!inter_name   inter_type        basis       dr         R_min      R_max    n_smooth
+ Pair_LJ_LJ   Pair_Interaction  linear       0.003       0.000      1.400    0
+[End Inter_Types]
+
+[Pair_Interaction] 1
+! inter_name   type1  type2
+ Pair_LJ_LJ LJ LJ
+[End Pair_Interaction]
+
+[SVD]
+0.00000001
+YES
+NO
+YES
+[End SVD]
+
+[Frame_Weighting]
+NPT
+[End Frame_Weighting]
+
+[TRIM]
+0.0000000001
+[End TRIM]
+
+[TPR] 1
+../../Data_to_Analyze/LJ.btp
+[End TPR]
