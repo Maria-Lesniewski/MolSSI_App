@@ -1,0 +1,14 @@
+Welcome to par builder 
+
+To use simply call: 
+../build/bin/make_par -f AA_Dioxane.btp -o par.txt
+
+This will generate the list of interactions required for a CG model based on the topology passed
+[Considers Intramolecular Exclusions when generating required nb list, [e.g. if there's only one instance of a molecule type]]
+
+Note that the resultant par.txt file will not include the temperature of your simulation or the input and .btp file you'd like to use when force-matching
+Please fill those entries yourself
+
+
+In the event that the default BOCS settings are not desirable for force-matching, please use the edit bash script to change basis functions/bins
+[an example using sed to change the settings is shown] 
