@@ -12,11 +12,8 @@ fi
 
 cd build
 
-cmake .. -G "Unix Makefiles" -DCMAKE_C_COMPILER=mpicc -DCMAKE_INSTALL_PREFIX=build -DCMAKE_CXX_COMPILER=mpic++
+cmake ../ -G "Unix Makefiles" -DCMAKE_C_COMPILER=mpicc -DCMAKE_INSTALL_PREFIX=build -DCMAKE_CXX_COMPILER=mpic++
 
 make
 
-cd ..
-
-#chgrp -R wgn1_collab build
-#chmod -R 770 build
+cd ../
