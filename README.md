@@ -9,8 +9,6 @@ I have also seperated folders with code written by me vs. the BOCS heirloom file
 
 List of Repository items: 
      
-     -some simple python scripts I've put together for prior research projects [Research_Scripts]
-     
      -The python scripts required to recreate the figure included in the written proposal of the application [Figure_1]
      
      -Additional BOCS functions I've written given the above disclaimer [MBOCS_Functions]
