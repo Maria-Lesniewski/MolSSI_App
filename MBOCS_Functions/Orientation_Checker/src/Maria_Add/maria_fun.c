@@ -72,6 +72,8 @@ void get_user_selections(tW_gmx_topology *top,tW_user_selection *sel)
   print_index_names_and_atom_counts(top->idx_file);
     do
     {
+      fprintf(stdout, "We need to define an orienation vector based on the positions of atoms in each molecule\n");
+      fprintf(stdout, "Please enter two atom types that you'd like a displacement vector between\n");
       fprintf(stdout,"Enter index for selection one  %d: \n",i);
       scanf("%d",&idx1);
       fprintf(stdout,"Enter index for selection two %d: \n",i);
@@ -176,10 +178,10 @@ void count_dot_dist(tW_molcom_vector* comv, double* dot_dis_storage, int N_sites
 		  //Find the CoM dist (Note these typings work because dvec is a 3 entry double vec)
 		  displace=get_rect_prism_dx(comv[i].com_position, comv[j].com_position, box, dummydr);
 		  if(displace < 0.4){
-		  printf("CHECK THESE INDICES %d %d \n", i,j );
-		  printf("We passed vector %d: %f %f %f and vector %d: %f %f %f \n", i, comv[i].com_position[0], comv[i].com_position[1], comv[i].com_position[2], j, \
-				  comv[j].com_position[0], comv[j].com_position[1], comv[j].com_position[2]);
-		  printf("displace %f\n",displace);
+		  //printf("CHECK THESE INDICES %d %d \n", i,j );
+		  //printf("We passed vector %d: %f %f %f and vector %d: %f %f %f \n", i, comv[i].com_position[0], comv[i].com_position[1], comv[i].com_position[2], j, \
+		//		  comv[j].com_position[0], comv[j].com_position[1], comv[j].com_position[2]);
+		  //printf("displace %f\n",displace);
 		  }
 		  //ID a bin index
 		  idx=get_idx(displace, bw, n_bins);
@@ -270,10 +272,10 @@ void alt_count_dot_dist(tW_molcom_vector* comv, double* dot_dis_storage, int N_s
                   //Find the CoM dist (Note these typings work because dvec is a 3 entry double vec)
                   displace=get_rect_prism_dx(comv[i].com_position, comv[j].com_position, box, dummydr);
                   if(displace < 0.4){
-                  printf("CHECK THESE INDICES %d %d \n", i,j );
-                  printf("We passed vector %d: %f %f %f and vector %d: %f %f %f \n", i, comv[i].com_position[0], comv[i].com_position[1], comv[i].com_position[2], j, \
+                  //printf("CHECK THESE INDICES %d %d \n", i,j );
+                  //printf("We passed vector %d: %f %f %f and vector %d: %f %f %f \n", i, comv[i].com_position[0], comv[i].com_position[1], comv[i].com_position[2], j, \
                                   comv[j].com_position[0], comv[j].com_position[1], comv[j].com_position[2]);
-                  printf("displace %f\n",displace);
+                  //printf("displace %f\n",displace);
                   }
                   //ID a bin index
                   idx=get_idx(displace, bw, n_bins);

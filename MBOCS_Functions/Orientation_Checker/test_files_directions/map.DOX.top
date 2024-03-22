@@ -1,0 +1,25 @@
+[ moleculetype ]
+; name    n_atoms
+  DOX     14
+[ sitetypes ] 1
+; name   mapping_type  n_atoms
+  DOX    com           14
+[ atomtypes ]
+; number    type    site    mass/weighting
+    1       C       DOX     12.011
+    2       C       DOX     12.011
+    3       O       DOX     15.999
+    4       C       DOX     12.011
+    5       C       DOX     12.011
+    6       O       DOX     15.999
+    7       H	    DOX     1.008
+    8       H       DOX     1.008
+    9       H       DOX     1.008
+    10      H       DOX     1.008
+    11      H       DOX     1.008
+    12      H       DOX     1.008
+    13      H       DOX     1.008
+    14      H       DOX     1.008
+[ molecules ]
+; name number
+DOX 685

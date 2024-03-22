@@ -1,0 +1,5 @@
+To use o_check
+build/bin/o_check -h : will display a table of required files and options that can be specified with flags -x
+
+
+../build/bin/o_check -f very_short_traj_to_test_bocs.trr -s bocstop.btp -p map.DOX.top  

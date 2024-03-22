@@ -1,0 +1,242 @@
+[name] DIOXANE
+
+[natoms] 9590
+
+[ffparams] 27
+!ind 	name
+0 	LJ_SR
+1 	LJ_SR
+2 	LJ_SR
+3 	LJ_SR
+4 	LJ_SR
+5 	LJ_SR
+6 	LJ_SR
+7 	LJ_SR
+8 	LJ_SR
+9 	BONDS
+10 	BONDS
+11 	BONDS
+12 	ANGLES
+13 	ANGLES
+14 	ANGLES
+15 	ANGLES
+16 	ANGLES
+17 	RBDIHS
+18 	RBDIHS
+19 	RBDIHS
+20 	RBDIHS
+21 	RBDIHS
+22 	LJ14
+23 	LJ14
+24 	LJ14
+25 	LJ14
+26 	LJ14
+!atnr  fudgeQQ
+3 0.500000
+
+[molblocks] 1
+!moltype  mol_name  n_mols
+0 	  DOX 	  685 
+
+[moltypes] 1
+!ind 	name	n_mols	n_apm	n_res	n_cgs	excls_nr 	excls_nra 	bond_nr 	angle_nr 	dih_nr   	bigdih_nr  	imnb_nr
+0 	DOX	685	14	1	14	14		148		42		104		150		0		81	
+  [res]
+  DOX
+  [cg]
+  !idx  start  end
+     0      0    0
+     1      1    1
+     2      2    2
+     3      3    3
+     4      4    4
+     5      5    5
+     6      6    6
+     7      7    7
+     8      8    8
+     9      9    9
+    10     10   10
+    11     11   11
+    12     12   12
+    13     13   13
+  [bond]
+  !idx  type    i    j
+     0     9    1    0
+     1    10    2    1
+     2    10    3    2
+     3     9    4    3
+     4    10    5    0
+     5    11    6    0
+     6    11    7    0
+     7    11    8    1
+     8    11    9    1
+     9    11   10    3
+    10    11   11    3
+    11    11   12    4
+    12    11   13    4
+    13    10    5    4
+  [angle]
+  !idx  type    i    j    k
+     0    12    0    1    2
+     1    13    1    2    3
+     2    12    2    3    4
+     3    12    1    0    5
+     4    14    1    0    6
+     5    14    1    0    7
+     6    14    0    1    8
+     7    14    0    1    9
+     8    15    2    3   10
+     9    15    2    3   11
+    10    14    3    4   12
+    11    14    3    4   13
+    12    14    4    3   11
+    13    16    8    1    9
+    14    16   12    4   13
+    15    12    3    4    5
+    16    15    5    4   13
+    17    16   10    3   11
+    18    15    5    0    7
+    19    15    5    4   12
+    20    14    4    3   10
+    21    15    2    1    8
+    22    16    6    0    7
+    23    15    5    0    6
+    24    13    0    5    4
+    25    15    2    1    9
+  [dih]
+  !idx  type    i    j    k    l
+     0    17    4    3    2    1
+     1    17    3    4    5    0
+     2    17    3    2    1    0
+     3    17    4    5    0    1
+     4    18   12    4    3   10
+     5    18    9    1    0    6
+     6    18   12    4    3   11
+     7    18    8    1    0    6
+     8    18    9    1    0    7
+     9    18    8    1    0    7
+    10    18   13    4    3   11
+    11    18   13    4    3   10
+    12    19    8    1    0    5
+    13    19    9    1    0    5
+    14    19    7    0    1    2
+    15    19   11    3    4    5
+    16    19   12    4    3    2
+    17    19   10    3    4    5
+    18    19   13    4    3    2
+    19    19    6    0    1    2
+    20    20    6    0    5    4
+    21    20   11    3    2    1
+    22    20    9    1    2    3
+    23    20    7    0    5    4
+    24    20   12    4    5    0
+    25    20   13    4    5    0
+    26    20    8    1    2    3
+    27    20   10    3    2    1
+    28    21    5    0    1    2
+    29    21    5    4    3    2
+  [imnb]
+  !idx  type    i    j
+     0    22    0    3
+     1    22    1    4
+     2    23    2    5
+     3    24    2    6
+     4    24    2    7
+     5    25    4    6
+     6    25    4    7
+     7    25    3    8
+     8    25    1   10
+     9    25    3    9
+    10    25    1   11
+    11    25    0   12
+    12    24    5    8
+    13    25    0   13
+    14    26    6    8
+    15    24    5    9
+    16    24    2   12
+    17    26    7    8
+    18    26    6    9
+    19    24    5   10
+    20    24    2   13
+    21    26    7    9
+    22    24    5   11
+    23    26   10   12
+    24    26   11   12
+    25    26   10   13
+    26    26   11   13
+
+[attypes]
+!moltype_ind  at_ind  type  m          q        resind  atomname  typename  n_epa
+           0       0     0   12.01100  -0.03580       0       C00   opls_800  12
+  [epa]
+  0  1  2  3  4  5  6  7  8  9  12  13
+!moltype_ind  at_ind  type  m          q        resind  atomname  typename  n_epa
+           0       1     0   12.01100  -0.03590       0       C01   opls_801  12
+  [epa]
+  0  1  2  3  4  5  6  7  8  9  10  11
+!moltype_ind  at_ind  type  m          q        resind  atomname  typename  n_epa
+           0       2     1   15.99900  -0.37120       0       O02   opls_802  14
+  [epa]
+  0  1  2  3  4  5  6  7  8  9  10  11  12  13
+!moltype_ind  at_ind  type  m          q        resind  atomname  typename  n_epa
+           0       3     0   12.01100  -0.03640       0       C03   opls_803  12
+  [epa]
+  0  1  2  3  4  5  8  9  10  11  12  13
+!moltype_ind  at_ind  type  m          q        resind  atomname  typename  n_epa
+           0       4     0   12.01100  -0.03520       0       C04   opls_804  12
+  [epa]
+  0  1  2  3  4  5  6  7  10  11  12  13
+!moltype_ind  at_ind  type  m          q        resind  atomname  typename  n_epa
+           0       5     1   15.99900  -0.37030       0       O05   opls_805  14
+  [epa]
+  0  1  2  3  4  5  6  7  8  9  10  11  12  13
+!moltype_ind  at_ind  type  m          q        resind  atomname  typename  n_epa
+           0       6     2    1.00800  0.11080       0       H06   opls_806  9
+  [epa]
+  0  1  2  4  5  6  7  8  9
+!moltype_ind  at_ind  type  m          q        resind  atomname  typename  n_epa
+           0       7     2    1.00800  0.11080       0       H07   opls_807  9
+  [epa]
+  0  1  2  4  5  6  7  8  9
+!moltype_ind  at_ind  type  m          q        resind  atomname  typename  n_epa
+           0       8     2    1.00800  0.11070       0       H08   opls_808  9
+  [epa]
+  0  1  2  3  5  6  7  8  9
+!moltype_ind  at_ind  type  m          q        resind  atomname  typename  n_epa
+           0       9     2    1.00800  0.11070       0       H09   opls_809  9
+  [epa]
+  0  1  2  3  5  6  7  8  9
+!moltype_ind  at_ind  type  m          q        resind  atomname  typename  n_epa
+           0      10     2    1.00800  0.11070       0       H0A   opls_810  9
+  [epa]
+  1  2  3  4  5  10  11  12  13
+!moltype_ind  at_ind  type  m          q        resind  atomname  typename  n_epa
+           0      11     2    1.00800  0.11070       0       H0B   opls_811  9
+  [epa]
+  1  2  3  4  5  10  11  12  13
+!moltype_ind  at_ind  type  m          q        resind  atomname  typename  n_epa
+           0      12     2    1.00800  0.11020       0       H0C   opls_812  9
+  [epa]
+  0  2  3  4  5  10  11  12  13
+!moltype_ind  at_ind  type  m          q        resind  atomname  typename  n_epa
+           0      13     2    1.00800  0.11020       0       H0D   opls_813  9
+  [epa]
+  0  2  3  4  5  10  11  12  13
+
+
+[Bocs_at_types] 14
+!idx  typename
+   0  opls_800
+   1  opls_801
+   2  opls_802
+   3  opls_803
+   4  opls_804
+   5  opls_805
+   6  opls_806
+   7  opls_807
+   8  opls_808
+   9  opls_809
+  10  opls_810
+  11  opls_811
+  12  opls_812
+  13  opls_813

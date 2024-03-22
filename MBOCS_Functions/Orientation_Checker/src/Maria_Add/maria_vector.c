@@ -118,7 +118,7 @@ int main(int argc, char * argv[])
     MPI_Barrier(MPI_COMM_WORLD);
 
     if (local_rank == 0) {
-    printf("Congratulations, we've taken user input and packed it\n");
+   // printf("Congratulations, we've taken user input and packed it\n");
     }
 
  if (top->idx_file->n_at_per_group[packed_selections[0]] != top->idx_file->n_at_per_group[packed_selections[1]]){
@@ -191,25 +191,25 @@ for (int i = 0; i < n_bins; i++){
 	dot_dis[i] = dot_dis[i] * ((double)(n_local_frames)/((double)(n_total_frames)));
 	//if (i==400){printf("Value after: %f should be 865 times smaller and max_frames %f and total_frames %f\n and total_bins should be same : %d \n", dot_dis[i], n_max_frames, n_total_frames, bin_counter[i]);}
 }
-printf("bin_count before merge: %d \n", bin_counter[400]);
+//printf("bin_count before merge: %d \n", bin_counter[400]);
 // MERGE DATA
 MPI_Reduce(dot_dis, t_dot_dis, n_bins, MPI_DOUBLE, MPI_SUM, 0, MPI_COMM_WORLD);
 MPI_Reduce(bin_counter, t_bin_counter, n_bins, MPI_INT, MPI_SUM, 0, MPI_COMM_WORLD);
-printf("bin 400 post merge %d \n", t_bin_counter[400]);
+//printf("bin 400 post merge %d \n", t_bin_counter[400]);
 
 //Average
 for (int j = 0; j < n_bins; j++){
 	//t_dot_dis[j] = t_dot_dis[j]/n_total_frames; // Use this line when using count_dot_dis in the Actual Analysis Loop
 	if (t_bin_counter[j] != 0){
 	t_dot_dis[j] = t_dot_dis[j] / (double)(t_bin_counter[j]);}
-	if (j ==400){
-	printf("Hey jus in bin 400 again, before we divide \n");}
+	if (j ==400){}
+	//printf("Hey jus in bin 400 again, before we divide \n");}
 }
 //Save Results, we only need a copy from the main thread
 if (local_rank == 0 ){
 write_binned_vector(t_dot_dis, n_bins, bw, "Dot_Distance_Data.dat");
 }
- printf("Processor %d made it to the end somehow\n", local_rank);
+ printf("Processor %d made it to the end\n", local_rank);
 MPI_Finalize();
 return 0;
 }
