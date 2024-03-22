@@ -1,13 +1,13 @@
 # MolSSI_App
-Code to show MolSSI without granting access to in progress lab repos
+Code to show MolSSI for the 2024 Software competition  
 
-This is a somewhat curated repository of a few things I've done in the Noid lab for the 2024 Software competition.
-Admittedly, I would describe it as a collection
-The "Software" portion of my development efforts has included customized functions for the unreleased version of BOCS [v5, in progress]
-and thus to avoid an unintentional pre-release of this project I have ablated all code unnecessary to each function and seperated files
-written exclusively by me from heirloom files I've altered or worked to understand
+This is a somewhat curated repository of a few things I've done in the Noid lab
+Admittedly, I would describe it as a collection of python and bashed scripts along with some seperately compiled executables for BOCS
+Since the "Software" portion of my development efforts has included customized functions for the unreleased version of BOCS (v5, in progress)
+and thus to avoid an unintentional pre-release of this project I have ablated code that is not ready for release and unnecessary for each function when directions are followed
+I have also seperated folders with code written by me vs. the BOCS heirloom files I maintain / make use of, which were primarily written by prior Noid group members
 
-It contains: 
+List of Repository items: 
      
      -some simple python scripts I've put together for prior research projects [Research_Scripts]
      
